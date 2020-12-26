@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RamenStore <%= yield (:title) %></title>
+    
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+  </head>
+
+  <body>
+   
+    <%= render 'layouts/header' %>
+      <div class='container'>
+        <div id='content'>
+          <p class="notice"><%= flash[:notice] %></p>
+            <%= yield %>
+        </div>
+        <div id='first-column'>
+          <div class="loginbox">
+            <h2 class="BoxHeaders">Login Here...</h2>
+          </div>
+
+          <div class="searchbox">
+            <h2 class="BoxHeaders">Search Catalogue</h2>
+          </div>
+        </div>
+      </div>
+      <%= render 'layouts/footer' %>
+  </body>
+  
+</html>
+
