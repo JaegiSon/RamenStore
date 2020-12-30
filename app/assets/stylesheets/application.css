@@ -33,7 +33,7 @@
     overflow: auto;
    }
    .headSec h1 {
-    color: #ffffff;
+    color: #dfe208ec;
     font-size: 80px;
     padding: 15px;
    
@@ -43,9 +43,9 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-   
+    background-color: rgb(236, 233, 47);
    }
+
    li {float:left;}
    li a {
     display: block;
@@ -66,7 +66,7 @@
    .welcomeIm {width: 30%;}
    .foot {
     min-height: 80px;
-    background-color: #b3e0ff;
+    background-color: rgb(236, 233, 47);
     width: 100%;
     margin-top: 10px;
     overflow: auto;
@@ -74,9 +74,10 @@
    
    }
    .container {
-    background: url("/assets/sites/ramen.jpg");
-     background-repeat:no-repeat;
-     background-position:right bottom;
+    background: url("/assets/sites/ramen1.jpg");
+     background-repeat:repeat;
+     background-position:bottom right;
+     background-color: white;
      width: 100%;
      min-height: 700px;
     }
@@ -92,7 +93,7 @@
        }
        input[type=submit] {
         width: 100%;
-        background-color: #4CAF50;
+        background-color: #9c9206;
         color: white;
         padding: 14px 20px;
         margin: 8px 0;

@@ -89,9 +89,9 @@ class CartController < ApplicationController
       @orderitem.save
       end
       
-      @orders = Order.all
+      @orders = Order.last
       @orderitems = Orderitem.where(order_id: Order.last)
-      
+      session[:cart] = nil
       # session[:cart] = nil # Hidden for development so I can refresh the page
       
   end
