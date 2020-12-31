@@ -9,7 +9,7 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
+ *= require bootstrap
  *= require_tree .
  *= require_self
  */
@@ -59,9 +59,10 @@
    
     margin: auto;
     width:80%;
-    border: 3px solid #b3e0ff;
+    border: 0px solid #b3e0ff;
     padding: 10px;
     text-align: center;
+    text-decoration: underline;
    }
    .welcomeIm {width: 30%;}
    .foot {
@@ -77,7 +78,7 @@
     background: url("/assets/sites/ramen1.jpg");
      background-repeat:repeat;
      background-position:bottom right;
-     background-color: white;
+     background-color: orange;
      width: 100%;
      min-height: 700px;
     }
@@ -93,7 +94,7 @@
        }
        input[type=submit] {
         width: 100%;
-        background-color: #9c9206;
+        background-color: #f0721e;
         color: white;
         padding: 14px 20px;
         margin: 8px 0;

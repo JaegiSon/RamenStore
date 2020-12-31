@@ -14,6 +14,8 @@ Rails.application.routes.draw do
     resources :orders 
   end
 
+  
+
   get '/checkout' => 'cart#createOrder'
 
   root 'static_pages#home'
@@ -40,4 +42,5 @@ Rails.application.routes.draw do
   get '/cart/increase/:id' => 'cart#increase'
   
   post '/search' => 'items#search'
+  get '/search' => 'items#search'
 end

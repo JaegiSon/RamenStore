@@ -14,13 +14,6 @@ class ItemsController < ApplicationController
   def new
     @item = Item.new
   end
-  
-  # POST /search
-  def search
-    st = "%#{params[:q]}%"
-    @items = Item.where("title like ?", st)
-    end
-   
 
   # GET /items/1/edit
   def edit
@@ -50,6 +43,13 @@ class ItemsController < ApplicationController
   def destroy
     @item.destroy
     redirect_to items_url, notice: 'Item was successfully destroyed.'
+  end
+
+
+  # POST /search
+  def search
+    st = "%#{params[:q]}%"
+    @items = Item.where("title like ?", st)
   end
 
   private
