@@ -48,8 +48,8 @@ class ItemsController < ApplicationController
 
   # POST /search
   def search
-    st = "%#{params[:q]}%"
-    @items = Item.where("title like ?", st)
+    
+    @items = Item.where("title LIKE ?","%" + params[:q] + "%")
   end
 
   private

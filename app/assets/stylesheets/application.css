@@ -14,94 +14,88 @@
  *= require_self
  */
 
- headSec {
+ body {
+    background-image: url("/assets/sites/ramen.jpg");
+    background-size: 1520px 925px;
+  }
+.headSec {
+    background: url("/assets/sites/bar.png");
+    background-repeat: repeat;
+    background-size: 100% 110%;
     min-height:10px;
-    background-color: #b3e0ff;
+    background-color: #052242;
     width: 100%;
     margin-bottom:10px;
     overflow: auto;
+}
+.headSec h1 {
+    color: #ffe60000;
+    font-size: 120px;
+    padding: 0px;
    
-   }
-   .headSec {
-    background: url("/assets/sites/bar.jpg");
-    background-repeat: no-repeat;
-    background-size:100% 100%;
-    min-height:10px;
-    background-color: #b3e0ff;
-    width: 100%;
-    margin-bottom:10px;
-    overflow: auto;
-   }
-   .headSec h1 {
-    color: #dfe208ec;
-    font-size: 80px;
-    padding: 15px;
-   
-   }
-   ul {
+}
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(236, 233, 47);
-   }
+    
+}
 
-   li {float:left;}
-   li a {
+li {float:left;}
+li a {
     display: block;
     color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
    
-   }
-   .mainCont {
-   
+}
+.mainCont {
+    color:rgb(255, 255, 255);
     margin: auto;
     width:80%;
-    border: 0px solid #b3e0ff;
     padding: 10px;
     text-align: center;
     text-decoration: underline;
-   }
-   .welcomeIm {width: 30%;}
-   .foot {
+}
+.welcomeIm {width: 30%;}
+.foot {
     min-height: 80px;
-    background-color: rgb(236, 233, 47);
     width: 100%;
     margin-top: 10px;
     overflow: auto;
    
    
-   }
-   .container {
-    background: url("/assets/sites/ramen1.jpg");
-     background-repeat:repeat;
-     background-position:bottom right;
-     background-color: orange;
-     width: 100%;
-     min-height: 700px;
-    }
+}
+.container {
+    background-color:rgba(0, 0, 0, 0.534);
+    color: white;
+    background-repeat:repeat;
+    background-position:bottom right;
+    width: 100%;
+    min-height: 700px;
+}
     
-    input[type=text], select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-       }
-       input[type=submit] {
-        width: 100%;
-        background-color: #f0721e;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-       }
-       input[type=submit]:hover {
-        background-color: #45a049;
-       }
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #f0721e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}

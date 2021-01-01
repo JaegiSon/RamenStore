@@ -5,5 +5,5 @@ class Order < ApplicationRecord
     end
    
    
-   has_many :orderitems
+   has_many :orderitems, :dependent => :destroy
 end

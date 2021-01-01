@@ -9,8 +9,9 @@ class OrdersController < ApplicationController
 
   # GET /orders/1
   def show
-    @orderitems = Orderitem.all
     @user = User.find(current_user.id)
+    @orderitems = Orderitem.all
+    
     #@orderitems = Orderitem.where(order_id: params[:id])
   end
 
