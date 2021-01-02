@@ -8,8 +8,8 @@
     border: 2px solid rgb(0, 0, 0);
     padding: 8px;
    }
-   #customers tr:nth-child(odd){background-color: #f0e984;}
-   #customers tr:nth-child(even){background-color: #ffae00;}
+   #customers tr:nth-child(odd){background-color: #0c0229;}
+   #customers tr:nth-child(even){background-color: #07071f;}
    #customers tr:hover {background-color: #ddd;}
    #customers th {
     padding-top: 12px;

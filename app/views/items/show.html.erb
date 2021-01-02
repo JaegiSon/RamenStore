@@ -2,7 +2,7 @@
 <div id="itemsContainer">
  <h1><%= @item.title %></h1>
  <%= image_tag @item.image_url, :class => 'welcomIm' %>
- <h2><%= @item.description %></h1>
+ <h2><%= @item.description %></h2>
 
  <div class="itemhols">
  <p>Price <%= number_to_currency(@item.price, :unit => "€") %>

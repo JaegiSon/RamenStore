@@ -1,7 +1,15 @@
 <footer class="foot">
-<% if session[:login] == 1 %>
-<%= link_to 'New Item', new_item_path, :class =>"button", :role=>"button" %>
-<%= link_to 'New Category', new_category_path, :class =>"button", :role=>"button" %>
-
-<% end %>
+     <div id="footer1">
+        <p>Ramen Store, <br>Unit 1, <br>Business Park,<br> Ramenstown, <br>Ireland</p>
+        <p>T: 0082-RAMEN-STORE</p>
+    </div>
+    <div id="footer2">
+        <p>©2021 Ramen Store. All rights reserved.</p>
+    </div>
+    <div id="footer3">
+    <% if session[:login] == 1 %>
+        <%= link_to 'New Item', new_item_path, :class =>"button", :role=>"button" %>
+        <%= link_to 'New Category', new_category_path, :class =>"button", :role=>"button" %>
+    <% end %>
+    </div>
 </footer>

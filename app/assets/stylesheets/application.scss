@@ -13,11 +13,12 @@
  *= require_tree .
  *= require_self
  */
-
+@import "bootstrap/scss/bootstrap";
  body {
     background-image: url("/assets/sites/ramen.jpg");
     background-size: 1520px 925px;
   }
+
 .headSec {
     background: url("/assets/sites/bar.png");
     background-repeat: repeat;
@@ -28,46 +29,82 @@
     margin-bottom:10px;
     overflow: auto;
 }
+
 .headSec h1 {
     color: #ffe60000;
     font-size: 120px;
-    padding: 0px;
-   
+    padding: 0px;   
 }
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
 
 li {float:left;}
+
 li a {
     display: block;
     color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-   
 }
+
 .mainCont {
     color:rgb(255, 255, 255);
     margin: auto;
     width:80%;
     padding: 10px;
-    text-align: center;
-    text-decoration: underline;
 }
+
+#mainCont1 {
+    text-align: left;
+}
+
+#mainCont2 {
+    text-align: left;
+}
+
 .welcomeIm {width: 30%;}
+    
 .foot {
+    background-color: #052242;
+    color: white;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 10px;
+    overflow: hidden;
+    padding-top: 10px;
     min-height: 80px;
     width: 100%;
-    margin-top: 10px;
-    overflow: auto;
-   
-   
+    bottom: 0px;
+    display: block;
 }
+
+#footer1 {
+    width: 30%;
+    float: left;
+    height: 99%;
+    margin-left: 1%;
+    display: block;
+}
+
+#footer2 {
+    height: 99%;
+    width: 30%;
+    float: left;
+    text-align: center;
+    display: block;
+}
+
+#footer3 {
+    width: 30%;
+    float: right;
+    text-align: right;
+}
+
 .container {
     background-color:rgba(0, 0, 0, 0.534);
     color: white;
@@ -86,6 +123,7 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
 input[type=submit] {
     width: 100%;
     background-color: #f0721e;
@@ -96,6 +134,27 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
+
 input[type=submit]:hover {
     background-color: #45a049;
+}
+
+h1 {
+    text-align: center;
+}
+
+#contact1 {
+    width: 30%;
+    float: left;
+    height: 99%;
+    margin-left: 1%;
+    display: block;
+}
+
+#contact2 {
+    height: 99%;
+    width: 30%;
+    float: left;
+    text-align: left;
+    display: block;
 }
