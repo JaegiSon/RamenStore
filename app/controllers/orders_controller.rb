@@ -3,6 +3,7 @@ class OrdersController < ApplicationController
 
   # GET /orders
   def index
+    @user = User.find(current_user.id)
     @orders = Order.all
     @orderitems = Orderitem.all
   end
