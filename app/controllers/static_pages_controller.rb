@@ -13,6 +13,6 @@ class StaticPagesController < ApplicationController
    
    def category
      catName = params[:title]
-     @items = Item.where("category like ? ", catName)
+     @items = Item.where("country like ? ", catName)
    end
 end
