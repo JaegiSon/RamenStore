@@ -15,13 +15,11 @@ Rails.application.routes.draw do
   end
 
   
-
   get '/checkout' => 'cart#createOrder'
 
   root 'static_pages#home'
   
   get '/home' => 'static_pages#home'
-  
   get '/help' => 'static_pages#help'
   get '/about' => 'static_pages#about'
   
@@ -32,15 +30,13 @@ Rails.application.routes.draw do
   get 'category/:title', to: 'static_pages#category'
   resources :items
   
-  
   get '/cart' => 'cart#index'
-
   get '/cart/clear' => 'cart#clear'
   get '/cart/:id' => 'cart#add'
   get '/cart/remove/:id' => 'cart#remove'
   get '/cart/reduce/:id' => 'cart#reduce'
   get '/cart/increase/:id' => 'cart#increase'
   
-  post '/search' => 'items#search'
+  
   get '/search' => 'items#search'
 end
