@@ -1,16 +1,42 @@
 <% provide(:title, "Home") %>
 <div class="mainCont">
+    
     <div id="mainCont1">
-        <h1>Welcome to the Ramen Store!</h1>
+        <h1>Welcome to the Ramen Store!!!</h1>
         <h3>We sell instant Ramen from many different countries</h3>
         <h3>And all at reasonable price!!!</h3>
     </div>      
 
-
-
-
-    <div id="mainCont2">
-        <%=render 'layouts/categories'%>
+    <br>
+    <br>
+    <br>
+    
+        <% if user_signed_in? %>
+            <div id="mainCont2">
+            <h2>Some products that you ordered with us before</h2>
+            <table id="customers">
+            
+            <% @orderitems.each do |orderitem| %>
+                <tr>
+                <%@name = orderitem.title%>
+                
+                <td><%= orderitem.title %></td>
+                
+                
+                </tr>
+            <%end%>
+        <%else%>
+            <div id="mainCont2">
+                <%= image_tag("welcome.jpg", :alt => "welcome") %>
+            <table id="customers">
+        <% end %>
+    
+        <tr></tr>
+        </table>
+            
+        </div>
+        
+        
     </div>
 
 </div>

@@ -10,7 +10,7 @@
    }
    #customers tr:nth-child(odd){background-color: #0c0229;}
    #customers tr:nth-child(even){background-color: #07071f;}
-   #customers tr:hover {background-color: #ddd;}
+   #customers tr:hover {background-color: rgb(92, 83, 83);}
    #customers th {
     padding-top: 12px;
     padding-bottom: 12px;

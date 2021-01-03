@@ -1,4 +1,38 @@
-<% provide(:title, "Contact Us") %>
+
+<head>
+    <title>Add Map</title>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 53.350444, lng: -6.286250 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+  </head>
+  <% provide(:title, "Contact Us") %>
 <h1>Contact us at below details!</h1>
     <div id="contact1">
         <h3>Phone: </h3>
@@ -8,5 +42,18 @@
         <h3>Address: </h3>
         <h5>Ramen Store, <br>Unit 1, <br>Business Park, <br>Ramenstown, <br>Ireland</h5>
     </div>
-
-
+    
+    <head>
+    <title>Add Map</title>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUfbFB5FvDjrL1c2OPoDI3RPkXyy_ByiM&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    
+    <!--The div element for the map -->
+    <div id="map"></div>
+  </body>

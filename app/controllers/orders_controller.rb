@@ -8,12 +8,6 @@ class OrdersController < ApplicationController
     @orderitems = Orderitem.all
   end
 
-# GET /allOrders
-  def all
-    @orders = Order.all
-    @orderitems = Orderitem.all
-  end
-
   # GET /orders/1
   def show
     @user = User.find(current_user.id)
