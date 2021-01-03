@@ -57,13 +57,13 @@
             <li class="nav-item">
             <%= link_to "Contact Us", help_path, class:"nav-link" %>
             </li>
-        <% if session[:login] == 1 %>
+        <% if admin_signed_in? %>
             <li class="nav-item">
-                <%= link_to "Admin Logout", logout_path, clasS:"nav-link" %>
+                <%= link_to 'Admin Sign out', destroy_admin_session_path, class:"nav-link", :method => :delete %>
             </li>
         <% else %>
             <li class="nav-item">
-                <li><%= link_to "Admin Login", login_path, class:"nav-link" %></li>
+                <%= link_to 'Admin Sign in', new_admin_session_path, class:"nav-link"%>
             </li>
         <% end %>
             

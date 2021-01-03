@@ -7,7 +7,7 @@
         <p>©2021 Ramen Store. All rights reserved.</p>
     </div>
     <div id="footer3">
-    <% if session[:login] == 1 %>
+    <% if admin_signed_in? %>
         <%= link_to 'New Item', new_item_path, :class =>"button", :role=>"button" %>
         <%= link_to 'New Category', new_category_path, :class =>"button", :role=>"button" %>
     <% end %>

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
   
+  devise_for :admins
   resources :categories
   get 'orderitems/index'
   get 'orderitems/show'
